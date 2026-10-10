@@ -46,6 +46,8 @@ test('rejects a note with no text', () =>
   withServer(async (base) => {
     const res = await post(base, { text: '   ' });
     assert.equal(res.status, 400);
+    const empty = await post(base, null);
+    assert.equal(empty.status, 400);
   }));
 
 test('deletes a note, and 404s for an unknown id', () =>
