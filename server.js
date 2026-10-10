@@ -29,7 +29,7 @@ export function createServer(store, log = () => {}) {
         } catch {
           return send(res, 400, { error: 'invalid JSON' });
         }
-        if (typeof data.text !== 'string' || data.text.trim() === '') {
+        if (data === null || typeof data !== 'object' || typeof data.text !== 'string' || data.text.trim() === '') {
           return send(res, 400, { error: 'text is required' });
         }
         send(res, 201, store.add(data.text.trim()));
