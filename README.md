@@ -9,7 +9,7 @@ A small notes web server built step by step with real commands. Node.js only, no
 
 ## Run it
 
-Needs Node.js 20 or newer (built and tested on v22.23.3).
+Built and tested on Node.js v22.23.3 (other versions are untested).
 
     npm test          # 5 automated tests
     node server.js    # listens on http://127.0.0.1:3000 (set PORT to change)
