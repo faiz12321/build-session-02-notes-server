@@ -18,10 +18,12 @@ The server only listens on 127.0.0.1, your own computer.
 
 ## The interactive walkthrough
 
-The commands that build this project, with the real output recorded from a real run, are in the companion practice page. Nothing in it runs on your device.
+The commands that build this project, with the real output recorded from a real run, are in the companion practice page: https://faiz12321.github.io/ai-tools-that-work/build-session-02-notes-server.html . Nothing in it runs on your device.
 
 ## Notes
 
 - Educational example, no warranty. Use at your own risk.
 - Sample notes in the walkthrough are made-up text.
 - Code is MIT licensed (see LICENSE). Node.js and curl are separate projects with their own licenses; this repository does not include them.
+- Practice only: the server has no login and no request size limit, so do not expose it to the internet. If `notes.json` is damaged the server will not start.
+- The commands are for a macOS or Linux terminal (on Windows, use WSL).
